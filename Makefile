@@ -14,6 +14,4 @@ run:
 	--rm \
 	--net=host \
 	--mount type=bind,source=$(shell pwd)/Default.pprof,target=/root/Prohelion/Profinity/Profiles/Default.pprof \
-	qutms_profinity \
-	bash
-	
+	qutms_profinity	
