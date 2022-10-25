@@ -1,7 +1,7 @@
 .PHONY: all help build run
 
 all:
-	@echo "make build then make run"
+	@echo "make build then make run [optional: command=bash]"
 
 help: all
 
@@ -14,4 +14,6 @@ run:
 	--rm \
 	--net=host \
 	--mount type=bind,source=$(shell pwd)/Default.pprof,target=/root/Prohelion/Profinity/Profiles/Default.pprof \
-	qutms_profinity	
+	--mount type=bind,source=$(shell pwd)/Config.yaml,target=/root/Prohelion/Profinity/Config/Config.yaml \
+	qutms_profinity	\
+	$(command)
