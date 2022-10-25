@@ -8,7 +8,8 @@ RUN apt update && apt install -y --no-install-recommends \
 RUN wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
     && dpkg -i packages-microsoft-prod.deb \
     && apt update \
-    && apt install dotnet-sdk-6.0
+    && apt install -y --no-install-recommends dotnet-sdk-6.0 \
+    && rm -rf /var/lib/apt/lists/
 
 WORKDIR /App
 
