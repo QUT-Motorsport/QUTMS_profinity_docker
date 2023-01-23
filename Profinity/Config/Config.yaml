@@ -1,0 +1,20 @@
+Version: 1
+ActiveProfile: /root/Prohelion/Profinity/Profiles/Default.pprof
+ClientId: 8c4acb6b-7cc8-4322-bf45-b61a3e99e044
+Options:
+  BMSCalibration: false
+  CMUCalibration: false
+  WebServer:
+    Urls: http://localhost:5000;https://localhost:5001
+    HttpsRedirect: false
+    WebSite:
+      Enabled: true
+    RestAPI:
+      Enabled: true
+      Swagger: true
+AppSettings:
+  MaxRetainedCanPackets: 1000
+  Logs:
+    LogLevel: Trace
+    RollsizeMB: 1
+    RetainedLogs: 10
