@@ -1,6 +1,6 @@
 version: "3.9"
 services:
   profinity:
-    image: "profinity/profinity-console:develop"
+    image: "prohelion/profinity-console:develop"
     volumes:
       - ./Profinity:/root/Prohelion/Profinity
