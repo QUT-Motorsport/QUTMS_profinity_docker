@@ -5,7 +5,8 @@ Options:
   BMSCalibration: false
   CMUCalibration: false
   WebServer:
-    Urls: http://localhost:5000;https://localhost:5001
+    InternalUrls: http://profinity:15000
+    Urls: http://profinity:5000
     HttpsRedirect: false
     WebSite:
       Enabled: true

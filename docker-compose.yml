@@ -1,6 +1,10 @@
 version: "3.9"
 services:
   profinity:
-    image: "prohelion/profinity-console:develop"
+    # image: "prohelion/profinity-console:develop"
+    build: .
+    ports:
+      - '5000:5000'
+      - '15000:15000'
     volumes:
       - ./Profinity:/root/Prohelion/Profinity
