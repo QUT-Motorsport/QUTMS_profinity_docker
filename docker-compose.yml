@@ -3,8 +3,11 @@ services:
   profinity:
     # image: "prohelion/profinity-console:develop"
     build: .
+    network_mode: "host"
     ports:
       - '5000:5000'
       - '15000:15000'
+      - '4876:4876'
+    restart: always
     volumes:
       - ./Profinity:/root/Prohelion/Profinity
